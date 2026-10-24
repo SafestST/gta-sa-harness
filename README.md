@@ -104,7 +104,7 @@ executable versions are untested.
 | CE-100008-9 / CE-107750-0 | The program did not load | Check how the payload was packaged, not the code inside it |
 | CE-108255-1 | The program crashed with a memory-protection fault | Note the faulting address in the error, find it in the journal, work backwards |
 | SAMP crash at 0x7BCB15AA | A fault inside Wine's translator, not the game or client | Fix the compatibility layer; the journal records the diagnosis path |
-| Typed characters appear as ▢ squares | Text encoding mismatch between the console keyboard and the Windows program | Fix the character conversion — the string is right, its encoding is not |
+| Typed characters appear as ▢ squares | A **display-side** encoding mismatch — the underlying string is correct and executes | **Not game-breaking.** Login, chat and commands all work through it; a future fix is queued |
 
 ## Is this legal?
 
@@ -123,6 +123,9 @@ legitimately owned retail copy throughout.
 - **Stability under long play.** Random crashes are still present. The journal
   records every crash signature collected so far — the build needs hours of
   runtime against them, not new architecture.
+- **Display-side text.** Characters typed through the on-screen keyboard
+  render as squares in the client's fields — even though the underlying string
+  is correct and executes. Not game-breaking; queued for a future fix.
 ## What is inside this repository
 
 - `HARNESS.md` — the constitution: how the whole analysis was run

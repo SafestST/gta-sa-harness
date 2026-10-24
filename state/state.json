@@ -1,0 +1,45 @@
+﻿{
+    "monolith":  "GTA-SA-Harness",
+    "target":  {
+                   "scope":  [
+                                 "GAME",
+                                 "SAMP"
+                             ],
+                   "root":  "C:\\Program Files (x86)\\Rockstar Games\\GTA San Andreas",
+                   "read_only":  true
+               },
+    "phase":  4,
+    "phase_name":  "done",
+    "iteration":  2,
+    "cursors":  {
+                    "inventory":  {
+                                      "status":  "done"
+                                  },
+                    "taxonomy":  {
+                                     "registered":  0,
+                                     "status":  "done"
+                                 },
+                    "synthesis":  {
+                                      "status":  "done"
+                                  },
+                    "catalog":  {
+                                    "status":  "done",
+                                    "done":  439,
+                                    "total":  439,
+                                    "next_batch":  [
+                                                       "G-0074",
+                                                       "G-0330",
+                                                       "S-0430",
+                                                       "S-0434",
+                                                       "S-0428",
+                                                       "S-0429"
+                                                   ]
+                                }
+                },
+    "counters":  {
+                     "journal_entries":  14,
+                     "kb_files":  25,
+                     "notations":  22
+                 },
+    "updated_at":  "2026-10-10T16:32:24.2868800+02:00"
+}

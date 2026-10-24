@@ -21,6 +21,17 @@ configuration, and working that out is on you. The good news: the code-base
 in this repository contains everything you will need to make it happen —
 every setting, every file reference, every decision — recorded and explained.
 
+## Quick start (the near one-click path)
+
+The `toolkit/` folder automates the whole console-side setup: it verifies
+your game is the tested version, uploads the game and the SAMP client into
+the console's Wine prefix (resumable - interrupted runs just continue),
+applies the tuned registry settings, and verifies every file. You fill in
+three paths in one config file, run one command, open the title. See
+`toolkit/QUICKSTART.md`.
+
+The only manual step left is building the Wine runtime once on any Linux
+machine - the exact build recipes are in `toolkit/wine-build/`.
 ## What this is, in one paragraph
 
 A jailbroken PS5 can run homemade programs. This project used that ability to

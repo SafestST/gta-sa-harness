@@ -1,0 +1,11 @@
+WINE REGISTRY Version 2
+;; GTA SA Wine prefix registry
+;; Import with: wine regedit registry.reg   (or wine regedit /S registry.reg)
+;; Keys are relative to \\User (HKCU) unless noted.
+
+[Software\\Wine\\DllOverrides]
+"d3d9"="native"
+
+[Software\\Wine\\Direct3D]
+"VideoMemorySize"=dword:00001000
+"OffscreenRenderingMode"="fbo"

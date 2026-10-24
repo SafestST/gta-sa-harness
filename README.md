@@ -114,6 +114,15 @@ is distributing the game's files — and nothing in this repository does. EU
 Directive 2001/29/EC and 17 U.S.C. §106 apply. This project operated on a
 legitimately owned retail copy throughout.
 
+## Roadmap: what this does not do yet
+
+- **Server restart support.** The current build does not survive a server-side
+  restart: when Horizon Roleplay cycles its scripts and sessions, rejoining
+  means starting the client again from the console. Closing that gap is the
+  next functional work.
+- **Stability under long play.** Random crashes are still present. The journal
+  records every crash signature collected so far — the build needs hours of
+  runtime against them, not new architecture.
 ## What is inside this repository
 
 - `HARNESS.md` — the constitution: how the whole analysis was run
